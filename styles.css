@@ -1,0 +1,223 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffcc00; /* Dorado */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffcc00; /* Dorado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff; /* Blanco */
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #ffcc00;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #ffcc00; /* Dorado */
+}
+
+.hero p {
+    font-size: 24px;
+    color: #ffcc00; /* Blanco */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.about,
+.services,
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover,
+.services:hover,
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    color: #003366; /* Azul oscuro */
+    border-bottom: 2px solid #ffcc00; /* Dorado */
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #ffcc00; /* Dorado */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #003366; /* Azul oscuro */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #003366; /* Azul oscuro */
+    color: #ffcc00; /* Dorado */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #002244; /* Azul más oscuro */
+}
+
+/* Estilos adicionales para servicios */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    color: #003366; /* Azul oscuro */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #666;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegura que los elementos se adapten correctamente en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Nuevas reglas CSS para las imágenes y el contenido */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-image, .right-image {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.content {
+    flex: 2;
+    text-align: center;
+}
+
+img {
+    max-width: 200px/*100%*/;
+    height: auto;
+    border-radius: 20px;
+}
